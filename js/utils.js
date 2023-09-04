@@ -16,3 +16,13 @@ function platformCollision({ object1, object2 }) {
     object1.position.x + object1.width >= object2.position.x
   )
 }
+
+// function jumper(){
+//   player.velocity.y = -4
+// }
+// function jump(event) {
+//   if (event.key === 'ArrowUp') {jumper(); 
+//     document.removeEventListener('keydown', jump);
+//   }
+// }
+// document.addEventListener('keydown', jump);

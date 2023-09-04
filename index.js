@@ -125,10 +125,10 @@ const player = new Player({
 })
 
 const keys = {
-  d: {
+  ArrowRight: {
     pressed: false,
   },
-  a: {
+  ArrowLeft: {
     pressed: false,
   },
   j: {
@@ -201,13 +201,13 @@ function animate() {
     player.lastDirection = 'right'
     player.shouldPanCameraToTheLeft({ canvas, camera })
   }
-  else if (keys.d.pressed) {
+  else if (keys.ArrowRight.pressed) {
     player.switchSprite('Run')
     player.velocity.x = 2
     player.lastDirection = 'right'
     player.shouldPanCameraToTheLeft({ canvas, camera })
   }
-  else if (keys.a.pressed) {
+  else if (keys.ArrowLeft.pressed) {
     player.switchSprite('RunLeft')
     player.velocity.x = -2
     player.lastDirection = 'left'
@@ -235,16 +235,17 @@ animate()
 
 window.addEventListener('keydown', (event) => {
   switch (event.key) {
-    case 'd':
-      keys.d.pressed = true
+    case 'ArrowRight':
+      keys.ArrowRight.pressed = true
       break
-    case 'a':
-      keys.a.pressed = true
+    case 'ArrowLeft':
+      keys.ArrowLeft.pressed = true
       break
-    case 'w':
-      player.velocity.y = -4
+    case 'ArrowUp':
+    player.velocity.y = -4
       var audio = new Audio('./sounds/JumpGrunt1.wav');
-          audio.play();
+      audio.play();
+      // jump();     
       break
     case 'j':
       keys.j.pressed = true
@@ -267,12 +268,15 @@ window.addEventListener('keydown', (event) => {
 
 window.addEventListener('keyup', (event) => {
   switch (event.key) {
-    case 'd':
-      keys.d.pressed = false
+    case 'ArrowRight':
+      keys.ArrowRight.pressed = false
       break
-    case 'a':
-      keys.a.pressed = false
+    case 'ArrowLeft':
+      keys.ArrowLeft.pressed = false
       break
+    // case 'ArrowUp':
+    //   keys.ArrowUp.pressed = false
+    //   break
     case 'j':
       keys.j.pressed = false
       break
