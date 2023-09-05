@@ -26,3 +26,7 @@ function platformCollision({ object1, object2 }) {
 //   }
 // }
 // document.addEventListener('keydown', jump);
+
+function winner(){
+  document.querySelector('#displayText').style.display = 'flex'
+}

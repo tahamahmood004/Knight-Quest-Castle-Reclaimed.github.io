@@ -228,6 +228,10 @@ function animate() {
     else player.switchSprite('FallLeft')
   }
 
+  if(player.position.x >= 700){
+    winner()
+  }
+
   c.restore()
 }
 
