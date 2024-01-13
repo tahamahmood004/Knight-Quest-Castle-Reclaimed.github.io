@@ -228,7 +228,7 @@ function animate() {
     else player.switchSprite('FallLeft')
   }
 
-  if(player.position.x >= 700){
+  if(player.position.x >= 1200){
     winner()
   }
 
