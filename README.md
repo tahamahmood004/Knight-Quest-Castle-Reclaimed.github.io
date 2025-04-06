@@ -2,9 +2,9 @@
 
 **A medieval adventure game where you play as a brave knight on a mission to reclaim your fallen kingdom!**  
 
-🌐 **Play Now:** [Click Here](https://tahamahmood004.github.io/Knight-Quest-Castle-Reclaimed/)  
+🌐 **Play Now:** [Click Here](https://tahamahmood004.github.io/Knight-Quest-Castle-Reclaimed.github.io/)  
 
-![Game Screenshot](img\screenshot.PNG)
+![Game Screenshot](https://raw.githubusercontent.com/tahamahmood004/Knight-Quest-Castle-Reclaimed.github.io/refs/heads/main/img/screenshot.PNG)
 
 ## 🎮 About the Game  
 Embark on an epic journey as Sir Aldric, a valiant knight seeking to reclaim his lost castle from the clutches of an evil sorcerer. Solve puzzles, and uncover hidden treasures in this action-packed adventure!  
