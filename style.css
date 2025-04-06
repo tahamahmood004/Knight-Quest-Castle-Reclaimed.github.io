@@ -3,6 +3,9 @@ body {
     color: white;
     background: #111111;
     padding: 5%;
+    margin: 0;
+    height: 100%;
+    overflow: hidden
   }
 .start{
         text-align: center;

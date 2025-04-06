@@ -59,7 +59,7 @@ const gravity = 0.1
 const player = new Player({
   position: {
     x: 0,
-    y: 400,
+    y: 365,
   },
   collisionBlocks,
   platformCollisionBlocks,
@@ -228,7 +228,7 @@ function animate() {
     else player.switchSprite('FallLeft')
   }
 
-  if(player.position.x >= 1200){
+  if(player.position.x >= 1405 && player.position.y <= 200){
     winner()
   }
 
